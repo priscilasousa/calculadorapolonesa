@@ -7,6 +7,7 @@ typedef struct st_pilha
 
 }pilha;
 int menu(pilha *CABECA);
+void adicionar(pilha *CABECA);
 
 int main(void)
 {
