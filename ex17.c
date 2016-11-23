@@ -81,3 +81,22 @@ int menu(pilha *CABECA)
     return 0;
 }
 
+void adicionar(pilha *CABECA)
+{
+    pilha *novono = malloc(sizeof(pilha));
+    pilha *ponteiro;
+    novono->prox = NULL;
+
+    if(CABECA->prox==NULL)
+        CABECA->prox = novono;
+    else
+    {
+        ponteiro = CABECA->prox;
+        while(ponteiro->prox!=NULL)
+            ponteiro = ponteiro->prox;
+        ponteiro->prox = novono;
+    }
+    printf("\nDigite um numeor:\n");
+    scanf("%f", &novono->);
+    return;
+}
