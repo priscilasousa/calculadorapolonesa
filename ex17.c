@@ -152,18 +152,20 @@ void zerapilha(pilha *CABECA)
 {
     pilha *percorre, *atual;
     atual = CABECA->prox;
-    if(atual=NULL)
+    if(atual==NULL)
     {
         printf("\nCalculadora ja zerada!\n");
         return;
     }
-    while(atual==NULL)
+    while(atual!=NULL)
     {
         percorre = atual->prox;
         free(atual);
         atual = percorre;
     }
     CABECA->prox = NULL;
+    prinf("\nCalculadora zerada\n");
+    return;
 }
 
 
