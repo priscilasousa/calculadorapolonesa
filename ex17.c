@@ -11,6 +11,7 @@ int menu(pilha *CABECA);
 void adicionar(pilha *CABECA);
 void exibir(pilha *CABECA);
 void retiraultimo(pilha *CABECA);
+void zerapilha(pilha *CABECA);
 
 int main(void)
 {
@@ -146,3 +147,23 @@ void retiraultimo(pilha *CABECA)
 
     return;
 }
+
+void zerapilha(pilha *CABECA)
+{
+    pilha *percorre, *atual;
+    atual = CABECA->prox;
+    if(atual=NULL)
+    {
+        printf("\nCalculadora ja zerada!\n");
+        return;
+    }
+    while(atual==NULL)
+    {
+        percorre = atual->prox;
+        free(atual);
+        atual = percorre;
+    }
+    CABECA->prox = NULL;
+}
+
+
