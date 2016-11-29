@@ -115,3 +115,25 @@ void exibir(pilha *CABECA)
     }
     return;
 }
+
+void retiraultimo(pilha *CABECA)
+{
+    pilha *ultimo, *anterior;
+    ultimo = CABECA -> prox;
+    anterior = CABECA;
+
+    if(ultimo = NULL)
+    {
+        printf("\nNao tem nada para retirar\n");
+        return;
+    }
+    while(ultimo -> prox != NULL)
+    {
+        anterior = ultimo;
+        ultimo = ultimo -> prox;
+    }
+    anterior -> prox = NULL;
+    free(ultimo);
+
+    return;
+}
