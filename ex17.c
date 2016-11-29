@@ -102,4 +102,15 @@ void adicionar(pilha *CABECA)
     return;
 }
 
-
+void exibir(pilha *CABECA)
+{
+    pilha *percorre;
+    percorre = CABECA->prox;
+    printf("\nNumeros da lista:\n");
+    while(percorre != NULL)
+    {
+        printf("\n%f\n", percorre->x);
+        percorre = percorre->prox;
+    }
+    return;
+}
