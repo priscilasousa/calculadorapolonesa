@@ -8,6 +8,7 @@ typedef struct st_pilha
 }pilha;
 int checarvazio(pilha *CABECA);
 int menu(pilha *CABECA);
+int tamanhopilha(pilha *CABECA);
 void adicionar(pilha *CABECA);
 void exibir(pilha *CABECA);
 void retiraultimo(pilha *CABECA);
@@ -168,4 +169,15 @@ void zerapilha(pilha *CABECA)
     return;
 }
 
+int tamanhopilha(pilha *CABECA)
+{
+    pilha *checar;
+    checar = CABECA->prox;
+    if(checar==NULL)
+        retunr 0;
+    if(checar->prox==NULL)
+        return 1;
+
+        return 2;
+}
 
