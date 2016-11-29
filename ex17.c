@@ -6,6 +6,7 @@ typedef struct st_pilha
     struct st_pilha *prox;
 
 }pilha;
+int checarvazio(pilha *CABECA);
 int menu(pilha *CABECA);
 void adicionar(pilha *CABECA);
 void exibir(pilha *CABECA);
@@ -23,6 +24,14 @@ int main(void)
     }
 
     return 0;
+}
+
+int checarvazio(pilha *CABECA)
+{
+    if(CABECA->prox==NULL)
+        return 1;
+    else
+        return 0;
 }
 
 int menu(pilha *CABECA)
