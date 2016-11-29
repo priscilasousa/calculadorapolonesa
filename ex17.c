@@ -174,7 +174,7 @@ int tamanhopilha(pilha *CABECA)
     pilha *checar;
     checar = CABECA->prox;
     if(checar==NULL)
-        retunr 0;
+        return 0;
     if(checar->prox==NULL)
         return 1;
 
