@@ -122,7 +122,7 @@ void retiraultimo(pilha *CABECA)
     ultimo = CABECA -> prox;
     anterior = CABECA;
 
-    if(ultimo = NULL)
+    if(ultimo == NULL)
     {
         printf("\nNao tem nada para retirar\n");
         return;
