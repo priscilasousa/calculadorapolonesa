@@ -9,6 +9,7 @@ typedef struct st_pilha
 int menu(pilha *CABECA);
 void adicionar(pilha *CABECA);
 void exibir(pilha *CABECA);
+void retiraultimo(pilha *CABECA);
 
 int main(void)
 {
