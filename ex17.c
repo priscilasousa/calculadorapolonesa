@@ -8,6 +8,7 @@ typedef struct st_pilha
 }pilha;
 int menu(pilha *CABECA);
 void adicionar(pilha *CABECA);
+void exibir(pilha *CABECA);
 
 int main(void)
 {
@@ -100,3 +101,5 @@ void adicionar(pilha *CABECA)
     scanf("%f", &novono->);
     return;
 }
+
+
