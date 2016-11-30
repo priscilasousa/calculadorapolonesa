@@ -218,3 +218,16 @@ int tamanhopilha(pilha *CABECA)
         return 2;
 }
 
+void exibeultimo(pilha *CABECA)
+{
+    pilha *ponteiro;
+    ponteiro= CABECA->prox;
+    if(ponteiro==NULL)
+        return;
+    while(ponteiro->prox!=NULL)
+        ponteiro = ponteiro->prox;
+    printf("\n%f\n", ponteiro->x);
+    return;
+}
+
+
