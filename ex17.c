@@ -14,6 +14,7 @@ void exibir(pilha *CABECA);
 void retiraultimo(pilha *CABECA);
 void zerapilha(pilha *CABECA);
 void opera(pilha *CABECA, char a);
+void exibeultimo(pilha *CABECA);
 
 int main(void)
 {
@@ -97,7 +98,7 @@ int menu(pilha *CABECA)
 
 void opera(pilha *CABECA, char a)
 {
-    float c, b;
+    float c, b, resposta;
     pilha *ultimo, *anterior;
     ultimo=CABECA->prox;
     anterior=CABECA;
