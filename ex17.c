@@ -94,6 +94,36 @@ int menu(pilha *CABECA)
     return 0;
 }
 
+void opera(pilha *CABECA, char a)
+{
+    float c, b;
+    pilha *ultimo, *anterior;
+    ultimo=CABECA->prox;
+    anterior=CABECA;
+    while(ultimo->prox!=NULL)
+    {
+        anterior=ultimo;
+        ultimo=ultimo->prox;
+    }
+    b=anterior->x;
+    c=ultimo->x;
+    switch(a)
+    {
+
+    }
+    return;
+}
+
+
+
+
+
+
+
+
+
+
+
 void adicionar(pilha *CABECA)
 {
     pilha *novono = malloc(sizeof(pilha));
