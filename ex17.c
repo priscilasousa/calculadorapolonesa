@@ -13,6 +13,7 @@ void adicionar(pilha *CABECA);
 void exibir(pilha *CABECA);
 void retiraultimo(pilha *CABECA);
 void zerapilha(pilha *CABECA);
+void opera(pilha *CABECA, char a);
 
 int main(void)
 {
