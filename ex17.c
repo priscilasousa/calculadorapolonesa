@@ -109,20 +109,26 @@ void opera(pilha *CABECA, char a)
     c=ultimo->x;
     switch(a)
     {
-
+        case '-':
+            resposta= b-c;
+            break;
+        case '+':
+            resposta= b+c;
+            break;
+        case '/':
+            resposta= b/c;
+            break;
+        case '*':
+            resposta= b*c;
+            break;
+        default:
+            printf("\nOperador Invalido\n");
+            break;
     }
+    anterior->x = resposta;
+    retiraultimo(CABECA);
     return;
 }
-
-
-
-
-
-
-
-
-
-
 
 void adicionar(pilha *CABECA)
 {
