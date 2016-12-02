@@ -235,6 +235,6 @@ void exibeultimo(pilha *CABECA)
 void operaespecial(pilha *CABECA)
 {
     pilha *ponteiro;
-    ponteiro = CABECA->;
-    ponteiro->x = ponteiro->x * 1;
+    ponteiro = CABECA->prox;
+    ponteiro->x = ponteiro->x * -1;
 }
