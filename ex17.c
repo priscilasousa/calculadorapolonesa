@@ -45,7 +45,7 @@ int menu(pilha *CABECA)
     int tamanho;
 
     printf("\nDigite a letra da opcao que deseja\n(n) - Selecionar numero\n(0) - Selecionar operador\n(z) - Zerar a calculadora\n(r) - Retirar ultimo elemento\n(e) - Exibir elementos\n(s) - Sair\n");
-    scanf("%C", &a);
+    scanf("%c", &a);
     switch(a)
     {
         case 'n':
@@ -55,15 +55,15 @@ int menu(pilha *CABECA)
             tamanho = tamanhopilha(CABECA);
             switch(tamanho)
             {
-                caso 0:
+                case 0:
                     printf("\nImpossivel, lista esta vazia\n");
                 break;
                 case 1:
-                printf("\nA lista possui apenas um elementos, o unico operador que pode ser inserido eh -, quer inserir?\n(s) - Sim\n(n) - Nao\n"):
+                printf("\nA lista possui apenas um elementos, o unico operador que pode ser inserido eh -, quer inserir?\n(s) - Sim\n(n) - Nao\n");
                     scanf(" %c", &negativo);
                 if(negativo == 's' || negativo == 'S')
                 {
-                    operaespecial(cabeca);
+                    operaespecial(CABECA);
                     exibeultimo(CABECA);
                 }
                 break;
