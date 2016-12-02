@@ -232,4 +232,9 @@ void exibeultimo(pilha *CABECA)
     return;
 }
 
-
+void operaespecial(pilha *CABECA)
+{
+    pilha *ponteiro;
+    ponteiro = CABECA->;
+    ponteiro->x = ponteiro->x * 1;
+}
