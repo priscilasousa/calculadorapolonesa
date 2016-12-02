@@ -15,6 +15,7 @@ void retiraultimo(pilha *CABECA);
 void zerapilha(pilha *CABECA);
 void opera(pilha *CABECA, char a);
 void exibeultimo(pilha *CABECA);
+void operaespecial(pilha *CABECA);
 
 int main(void)
 {
